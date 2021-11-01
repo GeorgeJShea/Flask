@@ -5,8 +5,9 @@
 
 import math
 
-def surfaceArea():
-    pass
+def surfaceArea(rad, hi):
+    surface = 2 * math.pi * rad * hi + 2 * math.pi * rad^2
+    return surface
 
 def volume(rad, hi):
     volume = math.pi * rad * rad * hi
@@ -21,6 +22,6 @@ def prompt():
     height = int(input("Please Enter the height :"))
 
     print("\nThe Volume of a Cylinder = ", volume(radius, height))
-
+    print("\nThe surfaceArea of a Cylinder = ", surfaceArea(radius, height))
 if __name__ == '__main__':
     prompt()
